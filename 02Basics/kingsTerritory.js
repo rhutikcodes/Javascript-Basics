@@ -8,7 +8,6 @@ if(true){
         console.log(king)
     }
 
-
 }
 
 if(true){
