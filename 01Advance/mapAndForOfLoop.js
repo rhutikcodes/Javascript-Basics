@@ -42,3 +42,9 @@ users.set('sam',sam)
 // }
 
 // users.forEach((value,key)=> console.log(key+' = '+ value.age))  
+
+
+var arrayOfArray=[['one','1'],['two','2'],['three','3']]
+
+var mappp=new Map(arrayOfArray)
+console.log(mappp);
