@@ -14,7 +14,14 @@ function myValidation () {
 document.querySelector('.myform').addEventListener('submit', event => {
   event.preventDefault()
   console.log(event.target.username.value)
-  console.log(event.target.realname.value)
-  event.target.username.value=''
-  event.target.realname.value=''
+  console.log(event.target.email.value)
+  if (event.target.password.value == event.target.confirm_password.value) {
+    let p = document.createElement('p')
+    p.textContent = 'Yo!'
+    document.body.appendChild(p)
+  } else {
+    let p = document.createElement('p')
+    p.textContent = 'Password do not match'
+    document.body.appendChild(p)
+  }
 })
